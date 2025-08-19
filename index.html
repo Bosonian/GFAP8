@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<body>
+<header class="app-header" role="banner">
+<div class="header-content">
+<h1>Stroke Triage Assistant</h1>
+<span class="emergency-badge">Emergency Tool</span>
+</div>
+<div class="header-controls">
+<button id="helpButton" aria-label="Help and Instructions" title="Help">❓</button>
+<button id="darkModeToggle" aria-label="Toggle dark mode" title="Dark Mode">🌙</button>
+</div>
+</header>
+
+
+<main role="main">
+<div id="appContainer"></div>
+</main>
+
+
+<!-- Help Modal -->
+<div id="helpModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+<div class="modal-content">
+<div class="modal-header">
+<h2 id="modalTitle">Quick Reference Guide</h2>
+<button class="modal-close" aria-label="Close">&times;</button>
+</div>
+<div class="modal-body">
+<h3>Glasgow Coma Scale (GCS)</h3>
+<ul>
+<li><strong>GCS &lt; 8:</strong> Comatose patient - use Coma Module</li>
+<li><strong>GCS 8-12:</strong> Moderate impairment</li>
+<li><strong>GCS 13-15:</strong> Mild impairment</li>
+</ul>
+<h3>FAST-ED Score Components</h3>
+<ul>
+<li><strong>Facial Palsy:</strong> 0-1 points</li>
+<li><strong>Arm Weakness:</strong> 0-2 points</li>
+<li><strong>Speech Changes:</strong> 0-2 points</li>
+<li><strong>Time:</strong> Critical factor</li>
+<li><strong>Eye Deviation:</strong> 0-2 points</li>
+<li><strong>Denial/Neglect:</strong> 0-2 points</li>
+</ul>
+<h3>Critical Values</h3>
+<ul>
+<li><strong>Systolic BP &gt; 180:</strong> Increased ICH risk</li>
+<li><strong>GFAP &gt; 500 pg/mL:</strong> Significant marker</li>
+<li><strong>FAST-ED ≥ 4:</strong> Consider LVO</li>
+</ul>
+<div class="disclaimer">
+<strong>⚠️ Clinical Disclaimer:</strong>
+This tool is for clinical decision support only. Always use clinical judgment and follow local protocols. Not a replacement for physician assessment.
+</div>
+</div>
+</div>
+</div>
+
+
+<footer role="contentinfo">
+<p>© <span id="currentYear"></span> iGFAP Project - Professional Edition</p>
+<div class="footer-links">
+<a href="#" id="privacyLink">Privacy Policy</a>
+<a href="#" id="disclaimerLink">Medical Disclaimer</a>
+<a href="#" id="versionLink">Version 2.0.1</a>
+</div>
+</footer>
+
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
